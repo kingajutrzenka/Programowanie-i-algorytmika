@@ -1,0 +1,142 @@
+#!/usr/bin/env python3
+"""
+#NWD:
+m = int(input("Podaj pierwszą liczbę naturalną: "))
+n = int(input("Podaj drugą liczbę naturalną: "))
+
+while m != n: # bo dopóki nie będzie tai
+    if m > n:
+        m = m - n
+    else:
+        n = n - m
+
+print(f"NWD = {n}")
+
+     
+#Gotowe:
+
+m = int(input("Podaj pierwszą liczbę naturalną: "))
+n = int(input("Podaj drugą liczbę naturalną: "))
+m0 = m
+n0 = n
+while m != n:
+    if m > n:
+        m = m - n
+    else:
+        n = n - m
+l = int((m0 * n0)/n)
+print(f"NWD = {n}")
+print(f"NWW = {l}")
+
+#zadanie 8
+n = int(input("Podaj liczbę naturalną: "))
+i = 1
+while i<=n:
+  if n % i == 0:
+    print(i)
+  i += 1
+ ## inny sposób
+ 
+lista = []
+for a in range(1, n + 1):
+	 if not (n % a):
+		 lista.append(a)
+lista
+#liczba doskonała
+n = int(input("Podaj liczbę naturalną: "))
+i = 1
+p = 0
+while i<n:
+    if n % i == 0:
+        p += i
+        i+= 1
+if p == n:
+  print(f"{n} jest liczbą doskonałą")
+else:
+  print(f"{n} nie jest liczbą doskonałą")
+  
+  ## drugi sposób
+lista = []
+for a in range(1, n + 1):
+	 if not (n % a):
+		 lista.append(a)
+sum(lista) == n
+# gdzieś tu ma być print
+
+#liczby pierwsze 
+n = int(input("Podaj liczbę naturalną: "))
+lista = []
+for a in range(1, n + 1):
+	 if not (n % a):
+		 lista.append(a)
+print(lista)
+len(lista) == 2
+# gdzieś tu ma być print
+
+#liczby zaprzyjaźnione
+n = int(input("Podaj liczbę naturalną: "))
+m = int(input("Podaj liczbę naturalną: "))
+dzielniki_n, dzielniki_m = [], []
+for a in range(1, n):
+	 if not (n % a):
+		 dzielniki_n.append(a)
+for a in range(1, m):
+	 if not (m % a):
+		 dzielniki_m.append(a)
+print(dzielniki_n, dzielniki_m)
+sum(dzielniki_n) == m and sum(dzielniki_m) == n
+# gdzieś tu ma być print
+
+#liczby bliźniacze
+n = int(input("Podaj liczbę naturalną: "))
+m = int(input("Podaj liczbę naturalną: "))
+if abs(n-m) ==2:
+	print("liczby bliźniacze")
+else:
+	print("liczby nie bliźniacze")
+	
+# rozkład	
+n = int(input("Podaj liczbę naturalną: "))
+i = 2
+while i<=n:
+    if n % i == 0:
+        print(i)
+        n = n/i
+    else:
+        i += 1
+        
+## wersja zdjęcia czegoś
+n = int(input("Podaj liczbę naturalną: "))
+m = int(input("Podaj liczbę naturalną: "))
+print(n,m)
+dzielniki_n, dzielniki_m = [], []
+for a in range(1, n + 1):
+	 if not (n % a):
+		 dzielniki_n.append(a)
+for a in range(1, m + 1):
+	 if not (m % a):
+		 dzielniki_m.append(a)
+print(dzielniki_n, dzielniki_m)
+len(dzielniki_n) == 2 and len(dzielniki_m) == 2 and abs(n - m) == 2
+
+## wersja zdjęcia czegoś
+n = int(input("Podaj liczbę naturalną: "))	
+def czy_pierwsza(n):
+	dzielniki_n = []
+	for a in range(1, n + 1):
+		if not (n%a):
+			dzielniki_n.append(a)
+	return len(dzielniki_n) == 2
+dzielniki_n= []
+a = 2
+for a in range(1, n):
+	 if (n % czy_pierwsza(n)) < 1:
+		 print(a)
+	 else:
+		 a += 1"""
+
+b = int(input("podaj b:")
+a = 2
+z = b
+lista=[]
+who
