@@ -59,9 +59,38 @@ while len(stos) > 1:
 				print("Tekst jest palindromem")
 			else:
 				print("Tekst nie jest palidnromem")
+"""Zadanie 9.
 
+Rozwiąż zadanie z wykładu dotyczące Odwrotnej Notacji Polskiej
+
+dane = [2, 7, "+", 3, "/", 14, 3, "-", 4,"*", "-"]
+
+stos = []
+print(dane)
+
+for x in dane:
+	if x == "+":
+		a = stos.pop()
+		b = stos.pop()
+		stos.append(b+a)
+	elif x == "-":
+		a = stos.pop()
+		b = stos.pop()
+		stos.append(b-a)
+	elif x == "/":
+		a = stos.pop()
+		b = stos.pop()
+		stos.append(b/a)
+	elif x == "*":
+		a = stos.pop()
+		b = stos.pop()
+		stos.append(b*a)
+	else:
+		stos.append(x)
+print(stos)"""
 
 			
+
 
 
 
