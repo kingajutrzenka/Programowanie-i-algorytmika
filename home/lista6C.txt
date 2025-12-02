@@ -1,0 +1,63 @@
+#!/usr/bin/env python3
+
+"""Zadanie 2.
+
+Napisz funkcję rekurencyjną obliczającą NWD(a,b) dla a, b naturalnych. Użyj tę funkcję w
+funkcji iteracyjnej służącej do obliczania NWD dla n (n>1) losowych liczb naturalnych
+mniejszych od 100. Napisz program pozwalający na skorzystanie z tych funkcji,
+przedstawiający kolejność obliczeń jak na przykładzie poniżej.
+Wskazówka: NWD(a,b,c)=NWD(NWD(a,b),c).
+
+Przykład: NWD(12, 36, 16, 8)=NWD(NWD(NWD(12,36),16),8)= NWD( NWD(12,16),8)=
+NWD(4,8)=4
+
+
+def NWD(a,b):
+	if b ==  0:
+		return a
+	return NWD(a = b, b = a % b)
+	
+print(NWD(7, 0))"""
+
+"""Zadanie 3.
+
+Z jednakowych sześcianów układmy piramidy, jak na poniższym rysunku
+
+# a) funkcję rekurencyjną obliczającą liniowo liczbę sześcianów potrzebnych do ułożenia n-tej piramidy
+
+def pir(n):
+	if n == 1:
+		return 1
+	return n**2 + pir(n-1)
+	
+print(pir(5))"""
+
+"""Zadanie 8.
+
+Wykorzystaj stos i kolejkę do sprawdzenia, czy długi tekst jest palindromem. Umieść kolejne
+jego znaki jednocześnie w kolejce i w stosie. Zdejmuj po znaku z każdej struktury i
+sprawdzaj, czy są takie same. Przerwij działania, jeśli znaki są różne lub przejrzałeś już
+połowę danych. Wyczyść kolejkę i stos. """
+
+slowo = "kajok"
+
+stos = [i for i in slowo]
+kolejka = [i for i in slowo]
+
+
+while len(stos) > 1:
+	zs = stos.pop()
+	zk = kolejka.pop(0)
+	if zs != zk:
+		print("Tekst nie jest palidnromem")
+		stos = ["a"]
+	else: 
+		if len(stos) == 1:
+			zs = stos.pop()
+			zk = kolejka.pop(0)
+			if zs == zk:
+				print("Tekst jest palindromem")
+
+			
+
+
