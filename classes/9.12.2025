@@ -1,0 +1,113 @@
+"""lista = ['a', 'b', 'c']
+print(lista)
+print(lista[0])
+liczby = ["zero", "jeden", "dwa"]
+print(liczby[0])
+liczby = {0 : "zero", 1 : "jeden", 2 : "dwa", 5 : "pięć", 3 : "trzy"}
+print(liczby[2])
+print(liczby[5])
+print(liczby[3])"""
+
+"""Zadanie 1.
+
+Napisz program, który podaną cyfrę wypisze słownie. Skorzystaj ze słownika
+
+liczby= {
+    0: 'zero',
+    1: 'jeden',
+    2: 'dwa',
+    3: 'trzy',
+    4: 'cztery',
+    5: 'pięć',
+    6: 'sześć',
+    7: 'siedem',
+    8: 'osiem',
+    9: 'dziewięć'
+}
+
+for i in liczby:
+	print(i, liczby[i]) #wypisuje parę klucz-wartość
+	
+#szybciej:
+for k, v in liczby.items(): #trzeba dodać to items
+	print(k, v) #wypisuje parę klucz-wartość
+	
+slownik = dict() #tworzy pusty słownik
+print(slownik)"""
+
+"""Zadanie 2.
+Utwórz słownik zawierający trzy ważne rzeki oraz kraje przez, które one płyną. Para
+klucz:wartość może mieć np. wartości ‘Nil’: ‘Egipt’.
+a) Wykorzystaj pętle do wyświetlenia zdania o każdej rzece, na przykład: ‘Nil przepływa
+przez Egipt’.
+b) Wykorzystaj pętlę do wyświetlenia nazw wszystkich rzek przechowywanych w
+słowniku.
+c) Wykorzystaj pętle do wyświetlenia nazw wszystkich Państw przechowywanych w
+słowniku.
+d) Poproś użytkownika, aby podał nazwę rzeki. Jeśli tej rzeki nie ma w słowniku, poproś
+o podanie kraju i parę tę dopisz do słownika. Wyświetl cały słownik.
+
+rzeki = {"Wisła": "Polska", "Nil": "Egipt", "Dunaj":"Niemcy"}
+
+for i in rzeki:
+	print(f"Rzeka {i} przepływa przez {rzeki[i]}")
+	
+for i in rzeki:
+	print(i)
+
+for i in rzeki:
+	print(rzeki[i]) #niby git, ale no tak średnio		
+# or
+
+print(rzeki.keys()) 
+
+# or
+
+for i in rzeki.values():
+	print(i)
+
+river = input("Podaj nazwe rzeki: ")
+if river not in rzeki:
+	 	panstwo = input("Podaj nazwe kraju: ")
+	 	rzeki[river]= panstwo
+print(rzeki)"""
+	
+"""Zadanie 5.
+
+W pliku słowa.txt znajdują się słowa napisane w języku angielskim, po jednym w
+każdym wierszu. Utwórz słownik list, w którym w każdej liście będą znajdowały się słowa
+zaczynające się od takiej samej litery i wypisz zawartość tego słownika na ekranie. Znajdź i
+wypisz na ekranie literę, na którą zaczyna się najwięcej słów. Jeśli jest takich liter więcej,
+wypisz wszystkie."""
+
+"""
+Zadanie 6.
+
+W pliku liczby.txt znajdują się liczby całkowite, po jednej w każdym wierszu. Utwórz
+słownik list, w którym w każdej liście będą znajdowały się liczby kończące się tą samą cyfrą i
+wypisz zawartość tego słownika na ekranie. Znajdź i wypisz na ekranie wszystkie cyfry, na
+które nie kończy się żadna liczba."""
+
+"""liczby = input("Podaj liczby")
+print(liczby)
+lista = liczby.split()"""
+
+lista = ["100", "10", "101", "1", "13", "45", "53"]
+
+nn = {0:[100, 10],
+1:[101, 1],
+3:[13, 53],
+5:[45]}
+
+print(nn)
+slownik = dict()
+for x in lista:
+	if x[-1] in slownik:
+		slownik[x[-1]].append(x)
+	else:
+		slownik[x[-1]]=[x]
+print(slownik)
+	
+	
+	
+	
