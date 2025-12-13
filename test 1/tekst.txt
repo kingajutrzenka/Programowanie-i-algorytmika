@@ -1,0 +1,6 @@
+Dany jest plik tekstowy tekst.txt oraz dwa łańcuchy s i t. Nie pisz programu, który
+zamieni wszystkie wystąpienia łańcucha s w tym pliku na łańcuch t.
+Dany jest plik tekstowy tekst.txt oraz dwa łańcuchy s i t. Nie pisz programu, który
+zamieni wszystkie wystąpienia łańcucha s w tym pliku na łańcuch t.
+Dany jest plik tekstowy tekst.txt oraz dwa łańcuchy s i t. Nie pisz programu, który
+zamieni wszystkie wystąpienia łańcucha s w tym pliku na łańcuch t.
