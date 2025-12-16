@@ -1,0 +1,66 @@
+#!/usr/bin/env python3
+
+"""def f(k):
+	if k == 0:
+		return -3
+	elif k == 1:
+		return 26
+	return -8*f(k-1)-28*f(k-2)
+
+print(f(10))"""
+
+
+n = 9951992395265190262450025806009725910932067655117427184190172503392174208115617098206501210005948989960793326795070311315606740337308560003799120332070638023080932815665069342006423569538651888646182702082728643674158215697834519958355086297136699973682238759643534985569934443164036023468138186358989
+
+n = list(str(n))
+
+"""print(n)
+
+s = 0
+lista = []
+w = 0
+for i in range(len(n)):
+	if s == 0  or s == 4:
+		s = 0
+		lista.append(n[i])
+		s += 1
+	else:
+		s += 1
+		
+print(lista[-1])
+
+for k in lista:
+	if int(k) % 2 == 0:
+		w += int(k)
+
+print(f"szukana suma to {w}")"""
+
+lista = []
+w = 0
+for i in range(len(n)):
+	if int(i)%7 == 0:
+		lista.append(n[i])
+print(lista)
+for k in lista:
+	if int(k) % 5 == 0:
+		w += int(k)
+
+print(w)
+		
+	
+"""listam = "dlQC FcNihhO dlQC jIjSj RdAWhQ jIjSj XTTZJ HfZSLZs HfZSLZs oiZHO uhev byeAbLz FcNihhO jIjSj XTTZJ XTTZJ oiZHO FcNihhO XTTZJ uhev dtNDY HfZSLZs jIjSj cfuNNgc dtNDY oiZHO dtNDY dlQC iyYb dlQC uhev jIjSj dtNDY HfZSLZs byeAbLz RdAWhQ oiZHO XTTZJ XTTZJ iyYb jIjSj dlQC HfZSLZs cfuNNgc XTTZJ dlQC dtNDY jIjSj dtNDY XTTZJ FcNihhO XTTZJ byeAbLz iyYb iyYb cfuNNgc oiZHO cfuNNgc iyYb dlQC"
+
+listam = listam.split(" ")
+lista = list(listam)
+
+print(lista)
+
+slownik = dict()
+for i in lista:
+	if i in slownik:
+		slownik[i] += 1
+	else:
+		slownik[i] = 1
+
+
+print(slownik)"""
