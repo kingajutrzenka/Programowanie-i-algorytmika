@@ -9,6 +9,16 @@ oddzielone spacją wyznaczające łuki digrafu, para i j oznacza, że łuk prowa
 Wyświetl na ekranie topologiczną kolejność wierzchołków digrafu D. Zastosuj algorytm
 omówiony na wykładzie."""
 
+with open("dane.in", "r") as d:
+	slownik = dict()
+	for linia in d:
+		u, v = linia.split()
+		if u in slownik:
+			slownik[u].append(v)
+		else:
+			slownik[u] = [v]
+	print(slownik)
+	
 #PRZYGOTUJ SIĘ W DOMU!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 """Zadanie 9.
@@ -86,5 +96,6 @@ def cykl(graf):
 		return True
 
 print(cykl(graf))
+
 
 
