@@ -87,3 +87,4 @@ def cykl(graf):
 
 print(cykl(graf))
 
+
