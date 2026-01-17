@@ -16,3 +16,4 @@ while i < n:
 
 print(inne)
 print((n-inne)*100/n)
+
