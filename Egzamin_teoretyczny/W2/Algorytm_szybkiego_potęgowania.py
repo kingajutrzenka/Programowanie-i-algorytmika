@@ -11,3 +11,4 @@ def szybkie_potęgowanie(x, m): # x to podstawa, m to wykładnik
 
 print(szybkie_potęgowanie(5, 12))
 print(5**12)
+
