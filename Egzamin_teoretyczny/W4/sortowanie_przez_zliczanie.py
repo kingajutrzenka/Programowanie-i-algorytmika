@@ -8,9 +8,9 @@ długość_listy = len(lista)
 	#zliczamy wyrazy
 def sortowanie_przez_zliczanie(n, ciąg):
 	lista_pomocnicza = []
-	for i in range(10):
+	for i in range(len(ciąg)+1):
 		lista_pomocnicza.append(0)
-	for m in range(n):
+	for m in range(len(ciąg)):
 		lista_pomocnicza[ciąg[m]] += 1
 	
 	#wstawiamy spowrotem do listy głównej
